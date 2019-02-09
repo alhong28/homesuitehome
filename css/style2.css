@@ -1,0 +1,328 @@
+/*hero-section*/
+.hero-pic {
+    background: url(../images/HeroTest1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 80%;
+}
+
+.logo-pic {
+    position: relative;
+    top: 160px;
+    left: -29%;
+}
+
+@media (min-width: 1200px) {
+    .logo-pic {
+        top: 198px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+    .logo-pic {
+        top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-pic {
+        top: 0px;
+    }
+}
+
+
+
+/*2nd section*/
+
+.pg1 > div {
+    padding: 0;
+}
+
+.pg1 > div > a > img {
+    width: 100%;
+}
+
+.pg1-text {
+    border: 3px solid #000;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.pg1-text > p {
+    margin: 0;
+    font-size: 25px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text > h1 {
+    margin: 20px 0;
+}
+
+
+.no-pd {
+    padding: 0;
+}
+
+/*3rd section*/
+
+.listings > div > a > img:hover {
+    opacity: 0.7;
+    transition: .7s;
+}
+
+.listings > div > a > img {
+    transition: .7s;
+}
+
+/*contact section*/
+
+.pg3 {
+    margin-top: 40px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pg3 > div > h1 {
+    font-size: 25px;
+}
+
+.pg3 > div > h2 {
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icons {
+    padding-top: 5px;
+    margin-bottom: 0;
+    float: right;
+}
+
+.pg3 > div > ul > li {
+    list-style: none;
+    display: inline;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.fa-snapchat {
+    background: yellow;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.fa-instagram {
+    background: white;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/*footer section*/
+
+.footer {
+    margin-top: 35px;
+    border-top: 2px solid black;
+}
+
+.footer-stuff {
+    margin-top: 2%;
+}
+
+.footer-options {
+    padding-left: 0;
+}
+
+.footer-options > li {
+    list-style: none;
+    display: inline;
+    text-decoration: underline;
+    padding-right: 3%;
+}
+
+.footer-phone {
+    float: right;
+}
+
+.footer-copyright {
+    padding-left: 1%;
+}
+
+/*responsiveness for homepage*/
+@media (min-width: 992px) {
+    .no-brd-right {
+        border-right: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .pg3 > div > h1 {
+        text-align: center;
+    }
+
+    .pg3 > div > h2 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .social-icons {
+        float: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .footer-options {
+        text-align: center;
+    }
+
+    .footer-stuff > p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .fa {
+        font-size: 25px;
+        width: 45px;
+    }
+}
+
+
+/*about page nav*/
+
+#nav-toggle {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    float: right;
+    margin: 10px;
+    margin-right: 0;
+}
+
+.no-pd-left {
+    padding-left: 0;
+}
+
+.hamburger {
+    padding-right: 0;
+}
+
+
+.top-section {
+    border-bottom: 1px solid black;
+}
+
+.top-descript {
+    margin-bottom: 10px;
+}
+
+/*about main pics*/
+
+
+.main-photo > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.about-pic {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .top-descript > div > h2 {
+        font-size: 25px;
+    }
+}
+
+/*about info*/
+
+.title {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title > div > h2 {
+        font-size: 25px;
+    }
+}
+
+.about-info > div > p {
+    text-indent: 10px;
+}
+
+.about-info > div > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left-brd {
+    border-left: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    .left-brd {
+        border-left: none;
+    }
+}
+
+/*communities listings*/
+
+.list-pic {
+    padding: 0;
+}
+
+.first-row {
+    margin-top: 30px;
+}
+
+.communities-option > div > a > img {
+    width: 100%;
+}
+
+.communities-option > div:hover {
+    opacity: 0.7;
+    transition: .7s;
+}
+
+
+.comm-text {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+    opacity: .7;
+    color: #fff;
+    text-align: center;
+}
