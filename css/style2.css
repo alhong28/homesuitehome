@@ -406,3 +406,14 @@
         margin-top: 25px;
     }
 }
+
+
+/*sellers*/
+
+.seller-icon {
+    color:  rgba(74, 144, 226, 1);
+}
+
+.seller-icon > .fa:hover {
+    opacity: 1;
+}
