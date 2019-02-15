@@ -1,120 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Home Suite Home</title>
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Suite Home</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="bootstrap3/css/bootstrap-theme.min.css">
-    </head>
+        <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/nav.css">
+</head>
 
-    <body>
-    
-        <!--Top hero picture/hamburger icon-->
-        <div class="hero-container">
-            <img id="hero-image" src="images/herotest.jpg" alt="hero image"/>
-                <div class="hamburger-container">
-                    <a id="nav-toggle" href="#">&#9776;</a>
+
+<body>
+<div id="wrapper">
+
+    <div class="overlay"></div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li>
+                <a href="#" target="_blank"><h1>Home</h1></a>
+            </li>
+            <li>
+                <a href="/about.html" target="_blank"><h1>Max</h1><p>Meet Max Tang</p></a>
+            </li>
+            <li>
+                <a href="/communities.html" target="_blank"><h1>Communities</h1><p>See What NJ Has To Offer</p></a>
+            </li>
+            <li>
+                <a href="/sellers.html" target="_blank"><h1>Sellers</h1><p>What's Your Home Worth?</p></a>
+            </li>
+            <li>
+                <a href="/buyers.html" target="_blank"><h1>Buyers</h1><p>What's Your Dream Home?</p></a>
+            </li>
+            <li>
+                <a href="/listings.html" target="_blank"><h1>Listings</h1><p>Featured Investments</p></a>
+            </li>
+            <li>
+                <a href="/propmgmt.html" target="_blank"><h1>Property Management</h1><p>Automated Investing</p></a>
+            </li>
+            <li>
+                <a href="/pref-vend.html" target="_blank"><h1>Preferred Vendors</h1><p>Meet The Team</p></a>
+            </li>
+            <li>
+                <a href="/contact.html" target="_blank"><h1>Contact</h1></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="page-content-wrapper">
+        <div class="ham-home">
+            
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+        
+        </div>
+        <div class="container" id="hero-container" >
+
+            <div class="row hero-section">
+                <div class="col-md-12 hero-pic"><img src="images/HSHTransparent.png" class="img-responsive logo-pic" alt="image not found"></div>
+                <div class="col-md-12 hide-banner"><button type="button" class="btn btn-info" id="hide-hero">Hide Banner</button></div>
+            </div>
+                
+
+
+        </div>
+
+        <div class="container">
+
+
+            <div class="row pg1">
+                <div class="col-md-6">
+                    <a href="/communities.html" target="_blank"><img src="images/propinvest.jpg" class="img-responsive" alt="image not found"></a>
+
+                    <div class="pg1-text no-brd-right">
+                        <p>Featured Investment Property</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="/Real Estate Evaluator.xlsx"><img src="images/calc.jpg" class="img-responsive" alt="image not found"></a>
+
+                    <div class="pg1-text">
+                        <p>Investment Property Calculator</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pg2">
+
+                <div class="header-text">
+                    <h1>List of Top Investments</h1>
                 </div>
 
-                <div class="logo-container">
-                    <img id="logo-image" src="images/HSHtransparent.png" alt="logo image"/>
+                <div class="row listings">
+                    <div class="col-md-1 no-pd"></div>
+
+                    <div class="col-md-2 no-pd">
+                        <a href="/listing1.html" target="_blank"><img src="images/garnerave1.JPG" class="img-responsive center-block" alt="image not found"></a>
+                    </div>
+                    <div class="col-md-2 no-pd">
+                        <a href="/listing5.html" target="_blank"><img src="images/28thst1.JPG" class="img-responsive center-block" alt="image not found"></a>
+                    </div>
+                    <div class="col-md-2 no-pd">
+                        <a href="/listing3.html" target="_blank"><img src="images/brookdaleave1.JPG" class="img-responsive center-block" alt="image not found"></a>
+                    </div>
+                    <div class="col-md-2 no-pd">
+                        <a href="/listing3.html" target="_blank"><img src="images/south19thst1.JPG" class="img-responsive center-block" alt="image not found"></a>
+                    </div>
+                    <div class="col-md-2 no-pd">
+                        <a href="/listing4.html" target="_blank"><img src="images/south6thst1.JPG" class="img-responsive center-block" alt="image not found"></a>
+                    </div>
+
+                    <div class="col-md-1 no-pd"></div>
                 </div>
+            </div>
 
-                <div class="button-container">
-                    <a class="btn">Hide Banner</a>
+            <div class="row pg3">
+                <div class="col-md-4 no-pd"><h1>Have A Question?</h1></div>
+                <div class="col-md-4" id="contact-bottom"><a href="/contact.html" target="_blank"><h2>Contact Max Tang</h2></a></div>
+                <div class="col-md-4">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/nj.maxtang"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.snapchat.com/add/kickindaglass"><i class="fa fa-snapchat"></i></a></li>
+                        <li><a href="https://www.instagram.com/maxtangkwrealtor/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
-        </div>
-
-        <!--Featured Investment Property Section-->
-        <div class="prop-invest-container">
-            <a href="#">
-                <img id="prop-invest-image" src="images/propinvest.jpg" alt="property investment image"/>
-            </a>
-                <div class="propinvest">
-                    Featured Investment Property
-                </div>
-        </div>
-
-        <!--Calculator Section-->
-        <div class="calc-container">
-            <a href="#">
-                <img id="calc-image" src="images/calc.jpg" alt="calc image"/>
-            </a>
-                <div class="calc">
-                    Investment Property Calculator
-                </div>
-        </div>
-
-        <!--List of Top Investments-->
-        <div class="list container">
-            <div class="list-header">
-                List of Top Investments
             </div>
-            <div class="list-pics">
-                <a href="#">
-                    <img id="listitem1" src="images/garnerave1.jpg" alt="46 Garner Ave"/>
-                </a>
-                <a href="#">
-                    <img id="listitem2" src="images/brookdaleave1.jpg" alt="191-193 Brookdale Ave"/>
-                </a>
-                <a href="#">
-                    <img id="listitem3" src="images/south6thst1.jpg" alt="286 South 6th St"/>
-                </a>
-                <a href="#">
-                    <img id="listitem4" src="images/south19thst1.jpg" alt="335 South 19th St"/>
-                </a>
-                <a href="#">
-                    <img id="listitem5" src="images/28thst1.jpg" alt="1115 28th St"/>
-                </a>
-            </div>
-        </div>
-
-        <hr>
-
-        <!--contact max section-->
-
-        <div class="contactmax-container">
-            <div class="question">
-                Have A Question?
-            </div>
-            <div class="contactmaxtang">
-                Contact Max Tang
-            </div>
-            <div class="socialmediaicons">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-snapchat"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-            </div>
-
-            <hr>
-        </div>
-
-        <!--footer-->
-
-        <div class="footer-container">
-            <nav class="footer-nav">
-                <ul class="footer-options">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Max</a></li>
-                    <li><a href="#">Communities</a></li>
-                    <li><a href="#">Sellers</a></li>
-                    <li><a href="#">Buyers</a></li>
-                    <li><a href="#">Listings</a></li>
-                    <li><a href="#">Property Management</a></li>
-                    <li><a href="#">Preferred Vendors</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
 
         
 
+        </div>
 
-        
+        <footer class="footer">
 
+            <div class="container">
+                    <div class="row footer-stuff">
+                        <div class="col-md-10">
+                            <ul class="footer-options">
+                                <li><a href="#" target="_blank">Home</a></li>
+                                <li><a href="/about.html" target="_blank">Max</a></li>
+                                <li><a href="/communities.html" target="_blank">Communities</a></li>
+                                <li><a href="/sellers.html" target="_blank">Sellers</a></li>
+                                <li><a href="/buyers.html" target="_blank">Buyers</a></li>
+                                <li><a href="/listings.html" target="_blank">Listings</a></li>
+                                <li><a href="/propmgmt.html" target="_blank">Property Management</a></li>
+                                <li><a href="/pref-vend.html" target="_blank">Preferred Vendors</a></li>
+                                <li><a href="/contact.html" target="_blank">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 footer-phone">
+                            <p>Cell: (732) 589-5567 Office: (201) 433-1111</p>
+                        </div>
+                    </div>     
+                    <div class="row footer-copyright">
+                        <div class="col-md-12">
+                            <p>&copy; COPYRIGHT 2019, ALBERT HONG ALL RIGHTS RESERVED. PHOTOS AND CONTENT &copy; COPYRIGHT MAX TANG, 2019</p>
+                        </div>
+                    </div>
+            </div>
 
-    </body>
+        </footer>    
+    </div>    
+</div>    
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"
+    integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+    crossorigin="anonymous"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/hsh.js"></script>
 
 </html>
 
