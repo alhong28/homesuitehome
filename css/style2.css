@@ -1,17 +1,23 @@
+body {
+    font-family: 'Cinzel', serif;
+}
+
 /*hero-section*/
+
 .hero-pic {
-    background: url(../images/HeroTest1.png);
+    background: url(../images/MaxTestGripwitRack2Light.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-    height: 80%;
+    height: 606px;
 }
 
 .logo-pic {
     position: relative;
-    top: 160px;
-    left: -29%;
+    top: 335px;
+    left: 2%;
+    width: 35%;
 }
 
 @media (min-width: 1200px) {
@@ -22,13 +28,16 @@
 
 @media(min-width: 768px) and (max-width: 992px){
     .logo-pic {
-        top: 120px;
+        top: 400px;
+        width: 35%;
     }
 }
 
 @media (max-width: 768px) {
     .logo-pic {
-        top: 0px;
+        top: 373px;
+        left: 0%;
+        width: 50%;
     }
 }
 
@@ -168,14 +177,21 @@
     display: inline;
     text-decoration: underline;
     padding-right: 3%;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-stuff > p {
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-phone {
     float: right;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-copyright {
     padding-left: 1%;
+    font-family: 'Lato', sans-serif;
 }
 
 /*responsiveness for homepage*/
@@ -246,6 +262,7 @@
 
 .top-descript {
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 /*about main pics*/
@@ -258,6 +275,10 @@
 
 .about-pic {
     padding: 0;
+}
+
+.about-info {
+    font-family: 'Lato', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -335,6 +356,7 @@
 .blah {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 .form-btn {
@@ -343,6 +365,7 @@
 
 .btn-wrapper {
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .blah > input::placeholder {
@@ -374,6 +397,7 @@
 
 .pref-list > div > p {
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -404,4 +428,98 @@
     text-align: center;
     background-color: rgba(145, 167, 195, 1);
     border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+}
+
+.side-btn {
+    white-space: normal;
+}
+
+.side-space {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.page-info > div > p {
+    text-indent: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+
+/*investors*/
+
+hr {
+    border: .5px solid black;
+    width: 100%;
+    display: inline-block;
+}
+
+.page-info > div > b {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+/*property management*/
+
+.propMgmt {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.page-info > div > ul > li {
+    font-family: 'Lato', sans-serif;
+}
+
+/*featured invest listings*/
+
+.top-section > div > h1 > p {
+    font-size:  15px;
+    display: inline;
+}
+
+.prop-address {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+.listing-info > div > p {
+    font-size: 25px;
+}
+
+.listing-pic-sing > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.listing-pic-plur > div {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.ess-info > div > ul > li {
+    list-style-type: none;
+}
+
+.left-info {
+    padding: 0;
+}
+
+.info-container {
+    border: 2px solid black;
+    background-color:  rgba(153, 194, 216, 1);
+}
+
+.info-container > div > div > h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.left-info > li {
+    text-decoration: underline;
+    text-align: center;
 }
