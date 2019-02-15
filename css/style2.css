@@ -4,7 +4,7 @@ body {
 
 /*hero-section*/
 
-.hero-pic {
+.hero-section {
     background: url(../images/MaxTestGripwitRack2Light.jpg);
     background-position: center;
     background-size: cover;
@@ -15,9 +15,45 @@ body {
 
 .logo-pic {
     position: relative;
-    top: 335px;
-    left: 2%;
-    width: 35%;
+    top: 426px;
+    left: -1%;
+    width: 25%;
+}
+
+.hide-banner {
+    position: relative;
+    z-index: 5;
+    top: -24%;
+    left: 43%;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hide-banner {
+        top: -24%;
+        left: 37%;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 679px) {
+    .hide-banner {
+        top: -14%;
+        left: 37%;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 439px) {
+    .hide-banner {
+        left: 32%;
+        top: -14%;
+    }
+}
+
+@media (max-width: 390px) {
+    .hide-banner {
+        left: 27%;
+        top: -14%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -26,17 +62,41 @@ body {
     }
 }
 
-@media(min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 992px){
     .logo-pic {
         top: 400px;
         width: 35%;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 680px) and (max-width: 767px) {
     .logo-pic {
         top: 373px;
         left: 0%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 679) {
+    .logo-pic {
+        top: 408px;
+        left: 0%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 569px) {
+    .logo-pic {
+        top: 446px;
+        left: 29%;
+        width: 40%;
+    }
+}
+
+@media (max-width: 439px) {
+    .logo-pic {
+        top: 446px;
+        left: 22%;
         width: 50%;
     }
 }
