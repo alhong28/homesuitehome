@@ -234,13 +234,13 @@ html { height: 100%;}
   background-color: #1a1a1a;
 }
 
-@media (max-width: 881px) {
-    .ham-home .hamburger.is-closed .hamb-top,
-    .ham-home .hamburger.is-closed .hamb-middle,
-    .ham-home .hamburger.is-closed .hamb-bottom {
+
+.ham-home .hamburger.is-closed#nav-home .hamb-top,
+.ham-home .hamburger.is-closed#nav-home .hamb-middle,
+.ham-home .hamburger.is-closed#nav-home .hamb-bottom {
         background-color: #fff;
 }
-}
+
 
 .hamburger.is-closed .hamb-top { 
   top: 5px; 

@@ -4,55 +4,42 @@ body {
 
 /*hero-section*/
 
+#hero-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .hero-section {
-    background: url(../images/MaxTestGripwitRack2Light.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(20,20,20, .5), 
+                rgba(20,20,20, .5)),
+                url(../images/Max-main.jpg);
+    background-position: top;
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
-    height: 606px;
+    height: 800px;
+    height: 100vh;
+    margin: 0;
 }
 
 .logo-pic {
-    position: relative;
-    top: 426px;
-    left: -1%;
-    width: 25%;
+    position: absolute;
+    width: 57%;
+    background-size: cover;
+    background-position: center left;
 }
 
-.hide-banner {
-    position: relative;
-    z-index: 5;
-    top: -24%;
-    left: 43%;
-    font-family: 'Lato', sans-serif;
+.hero-pic {
+    top: 300px;
+    left: -15%;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .hide-banner {
-        top: -24%;
-        left: 37%;
-    }
-}
 
-@media (min-width: 440px) and (max-width: 679px) {
-    .hide-banner {
-        top: -14%;
-        left: 37%;
-    }
-}
 
-@media (min-width: 391px) and (max-width: 439px) {
-    .hide-banner {
-        left: 32%;
-        top: -14%;
-    }
-}
-
-@media (max-width: 390px) {
-    .hide-banner {
-        left: 27%;
-        top: -14%;
+/* @media (min-width: 1200px) {
+    .logo-pic {
+        top: 384px;
+        left: 1%;
     }
 }
 
@@ -99,7 +86,7 @@ body {
         left: 22%;
         width: 50%;
     }
-}
+} */
 
 
 
@@ -113,16 +100,25 @@ body {
     width: 100%;
 }
 
-.pg1-text {
-    border: 3px solid #000;
-    text-align: center;
-    padding: 10px 0px;
+.pg1 > div > a {
+    text-decoration: none;
+    text-decoration-style: none;
 }
 
-.pg1-text > p {
-    margin: 0;
-    font-size: 25px;
+.pg1-text {
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,.6);
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 80px;
+    left: 15%;
+    height: auto;
 }
+
+
 
 .header-text {
     text-align: center;
@@ -136,6 +132,13 @@ body {
 .no-pd {
     padding: 0;
 }
+
+#sect2-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 
 /*3rd section*/
 
@@ -161,12 +164,13 @@ body {
 }
 
 .pg3 > div > h1 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-#contact-bottom {
+.pg3 > #contact-bottom {
     border: 1px solid black;
     text-align: center;
+    margin-top: 10px;
 }
 
 .pg3 > #contact-bottom > a {
@@ -175,7 +179,7 @@ body {
 }
 
 .pg3 > #contact-bottom > a > h2 {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -204,27 +208,45 @@ body {
 }
 
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-    border-radius: 50%;
-    border: 2px solid black;
+    background: white;
+    color: #3B5998;
+    
+    border: 1px solid black;
 }
 
 .fa-snapchat {
-    background: yellow;
-    color: black;
-    border-radius: 50%;
-    border: 2px solid black;
+    background: white;
+    color: #fffc00;
+    
+    border: 1px solid black;
 }
 
 .fa-instagram {
     background: white;
-    color: black;
-    border-radius: 50%;
-    border: 2px solid black;
+    color: #3f729b;
+    
+    border: 1px solid black;
+}
+
+@media (max-width: 992px) {
+    .pg3 > #contact-bottom {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .pg3 > #contact-bottom > a > h2{
+        font-size: 10px;
+    }
 }
 
 /*footer section*/
+
+.footer-setting {
+    background-color: black;
+    width: 100%;
+}
 
 .footer {
     margin-top: 35px;
@@ -242,23 +264,33 @@ body {
 .footer-options > li {
     list-style: none;
     display: inline;
-    text-decoration: underline;
-    padding-right: 3%;
+    text-decoration: none;
     font-family: 'Lato', sans-serif;
+}
+
+.footer-options > li > a {
+    color: #777;
+}
+
+.footer-options > li:not(:first-child):before {
+    content: " | ";
+    padding: 1%;
 }
 
 .footer-stuff > p {
     font-family: 'Lato', sans-serif;
+    color: #777;    
 }
 
 .footer-phone {
     float: right;
     font-family: 'Lato', sans-serif;
+    color: #777;
 }
 
 .footer-copyright {
-    padding-left: 1%;
     font-family: 'Lato', sans-serif;
+    color: #777;
 }
 
 /*responsiveness for homepage*/
@@ -566,6 +598,10 @@ hr {
     max-width: 100%;
     height: auto;
     padding: 0;
+}
+
+.listing-pic-plur > div > img {
+    width: 100%;
 }
 
 .ess-info > div > ul > li {
