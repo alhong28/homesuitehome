@@ -19,11 +19,43 @@ $(document).ready(function () {
     //     $("#hero-container").css("display", "none");
     // })
 
-    $("#img-hover").hover(function(e){
-        $(".pg1-text").css("background", "rgba(0,0,0,.8)")
-        else 
-        $(".pg1-text").css("background", "rgba(0,0,0,.5)")
-})
+    //hover section2 homepage//
+
+    $(".img-hover").hover(function(e){
+        $(this).find(".pg1-text").css("background", "#888");
+        $(this).find(".pg1-text").css("transition", ".5s");
+        $(this).find(".pg1-img").css("-moz-transform", "scale(1.1)");
+        $(this).find(".pg1-img").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".pg1-img").css("transform", "scale(1.1)")
+        $(this).find(".pg1-img").css("transition", ".5s");
+    },
+    function(e){
+        $(this).find(".pg1-text").css("background", "none");
+        $(this).find(".pg1-text").css("opactiy", ".8");
+        $(this).find(".pg1-img").css("-moz-transform", "scale(1)");
+        $(this).find(".pg1-img").css("-webkit-transform", "scale(1)");
+        $(this).find(".pg1-img").css("transform", "scale(1)")
+    })
+
+    //hover listings homepage//
+
+    $(".pg3-hover").hover(function(e){
+        $(this).find(".pg3-text").css("visibility", "visible");
+        $(this).find(".pg3-text").css("transition", ".1s");
+        $(this).find(".pg3-img").css("-moz-transform", "scale(1.1)");
+        $(this).find(".pg3-img").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".pg3-img").css("transform", "scale(1.1)")
+        $(this).find(".pg3-img").css("transition", ".5s");
+    },
+    function(e){
+        $(this).find(".pg3-text").css("visibility", "hidden");
+        $(this).find(".pg3-text").css("transition", ".1s");
+        $(this).find(".pg3-img").css("-moz-transform", "scale(1)");
+        $(this).find(".pg3-img").css("-webkit-transform", "scale(1)");
+        $(this).find(".pg3-img").css("transform", "scale(1)")
+        $(this).find(".pg3-img").css("transition", ".1s");
+    })
+    
 
   });
 

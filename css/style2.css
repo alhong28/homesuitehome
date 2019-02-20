@@ -35,65 +35,11 @@ body {
 }
 
 
-
-/* @media (min-width: 1200px) {
-    .logo-pic {
-        top: 384px;
-        left: 1%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .logo-pic {
-        top: 198px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px){
-    .logo-pic {
-        top: 400px;
-        width: 35%;
-    }
-}
-
-@media (min-width: 680px) and (max-width: 767px) {
-    .logo-pic {
-        top: 373px;
-        left: 0%;
-        width: 40%;
-    }
-}
-
-@media (min-width: 570px) and (max-width: 679) {
-    .logo-pic {
-        top: 408px;
-        left: 0%;
-        width: 40%;
-    }
-}
-
-@media (min-width: 440px) and (max-width: 569px) {
-    .logo-pic {
-        top: 446px;
-        left: 29%;
-        width: 40%;
-    }
-}
-
-@media (max-width: 439px) {
-    .logo-pic {
-        top: 446px;
-        left: 22%;
-        width: 50%;
-    }
-} */
-
-
-
 /*2nd section*/
 
 .pg1 > div {
     padding: 0;
+    overflow: hidden;
 }
 
 .pg1 > div > a > img {
@@ -105,17 +51,26 @@ body {
     text-decoration-style: none;
 }
 
+.pg1-head {
+    background: rgba(255,255,255,1);
+    color: black;
+    position: absolute;
+    left: 7%;
+    bottom: 90px;
+    font-size: 15px;
+    padding: 5px;
+}
+
 .pg1-text {
     border: 2px solid white;
     text-align: center;
     padding: 10px;
     background: rgba(0,0,0,.6);
     color: white;
-    font-size: 20px;
-    position: relative;
-    bottom: 80px;
-    left: 15%;
-    height: auto;
+    font-size: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 7%;
 }
 
 
@@ -142,13 +97,38 @@ body {
 
 /*3rd section*/
 
-.listings > div > a > img:hover {
-    opacity: 0.7;
-    transition: .7s;
+.listings {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.listings > div {
+    overflow: hidden;
+}
+
 
 .listings > div > a > img {
     transition: .7s;
+    width: 100%;
+}
+
+.listings > div > a > .pg3-text {
+    color: white;
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 1%;
+    margin-left: 5px;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+@media (max-width: 992px) {
+    .listings > div > a > .pg3-text {
+        left: 33%;
+    }
+    .listings {
+        max-width: 720px;
+    }
 }
 
 /*contact section*/
@@ -158,9 +138,21 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 10px 0;
-    width: 88%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 992px) {
+    .pg3 {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pg3 {
+        max-width: 720px;
+    }
 }
 
 .pg3 > div > h1 {
