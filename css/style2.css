@@ -82,12 +82,43 @@ body {
 
 
 
-.header-text {
-    text-align: center;
+.list-title {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+@media (max-width: 992px) {
+    .list-title {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-title {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 526px) {
+    .list-title {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 373px) {
+    .list-title {
+        max-width: 280px;
+    }
+}
+
 
 .header-text > h1 {
     margin: 20px 0;
+    margin-top: 40px;
+    color: #777;
+    font-family: 'Overpass', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 
@@ -134,7 +165,19 @@ body {
         left: 33%;
     }
     .listings {
-        max-width: 720px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 526px) {
+    .listings {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 373px) {
+    .listings {
+        max-width: 280px;
     }
 }
 
@@ -142,8 +185,8 @@ body {
 
 .pg3 {
     margin-top: 40px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 10px 0;
     max-width: 900px;
     margin-left: auto;
@@ -158,23 +201,39 @@ body {
 
 @media (max-width: 768px) {
     .pg3 {
-        max-width: 720px;
+        max-width: 500px;
     }
 }
 
+@media (max-width: 526px) {
+    .pg3 {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 373px) {
+    .pg3 {
+        max-width: 280px;
+    }
+}
+
+
 .pg3 > div > h1 {
+    color: #777;
+    font-family: 'Overpass', sans-serif;
     font-size: 20px;
+    font-weight: 100;
 }
 
 .pg3 > #contact-bottom {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     text-align: center;
     margin-top: 10px;
 }
 
 .pg3 > #contact-bottom > a {
     text-decoration: none;
-    color: black;
+    color: #777;
 }
 
 .pg3 > #contact-bottom > a > h2 {
@@ -183,7 +242,7 @@ body {
 }
 
 .pg3 > #contact-bottom:hover {
-    background-color: #666;
+    background-color: #777;
     color: white;
 }
 
@@ -222,19 +281,19 @@ body {
 .fa-facebook {
     background: white;
     color: #3B5998; 
-    border: 1px solid black;
+    border: 1px solid #ccc;
 }
 
 .fa-snapchat {
     background: white;
     color: #fffc00;  
-    border: 1px solid black;
+    border: 1px solid #ccc;
 }
 
 .fa-instagram {
     background: white;
     color: #3f729b;  
-    border: 1px solid black;
+    border: 1px solid #ccc;
 }
 
 @media (max-width: 992px) {
@@ -253,24 +312,39 @@ body {
 /*footer section*/
 
 .footer-quote {
-    background-color: #666;
+    background-color: #777;
     color: white;
     width: 100%;
     padding: 0;
     margin-top: 35px;
 }
 
+.quote-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .quote-text > div > p {
     padding: 10px;
     padding-top: 20px;
-    text-align: center;
+    padding-left: 0;
+    font-weight: 100;
     font-size: 18px;
     font-family: 'Overpass', sans-serif;
 }
 
+@media (max-width: 992px) {
+    .quote-text {
+        max-width: 720px;
+    }
+    .quote-text > div > p {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .quote-text > div > p {
-        color: #666;
+        color: #777;
     }
 }
 
@@ -284,7 +358,9 @@ body {
 }
 
 .footer-stuff {
+    margin: 0 auto;
     margin-top: 2%;
+    max-width: 900px;
 }
 
 .footer-options {
@@ -313,7 +389,6 @@ body {
 }
 
 .footer-phone {
-    float: right;
     font-family: 'Lato', sans-serif;
     color: #777;
 }
@@ -321,6 +396,75 @@ body {
 .footer-copyright {
     font-family: 'Lato', sans-serif;
     color: #777;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+@media (max-width: 992px) {
+    .footer-stuff {
+        max-width: 720px;
+    }
+    .footer-copyright {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-stuff {
+        max-width: 500px;
+    }
+    .footer-copyright {
+        max-width: 500px;
+    }
+    .footer-phone {
+        float: left;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 526px) {
+    .footer-stuff {
+        max-width: 350px;
+    }
+    .footer-copyright {
+        margin-top: 10px;
+        max-width: 350px;
+    }
+    .footer-options > li {
+        display: block;
+        text-align: left;
+        list-style: unset;
+        margin-top: 10px;
+    }
+    .footer-phone {
+        float: left;
+        padding-left: 0;
+    }
+    .footer-options > li:not(:first-child):before {
+        content: none;
+    }
+}
+
+@media (max-width: 373px) {
+    .footer-stuff {
+        max-width: 280px;
+    }
+    .footer-copyright {
+        max-width: 280px;
+    }
+    .footer-options > li {
+        display: block;
+        text-align: left;
+        list-style: unset;
+        margin-top: 10px;
+    }
+    .footer-phone {
+        float: left;
+        padding-left: 0;
+    }
+    .footer-options > li:not(:first-child):before {
+        content: none;
+    }
 }
 
 /*responsiveness for homepage*/
@@ -386,7 +530,12 @@ body {
 
 
 .top-section {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
+}
+
+.top-section > div > h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
 }
 
 .top-descript {
@@ -485,16 +634,25 @@ body {
 .blah {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    padding: 0;
+}
+
+.blah > label {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    color: #777;
 }
 
 .form-btn {
     width: 50%;
+    background-color: #666;
+    border-color: #666;
 }
 
 .btn-wrapper {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Overpass', sans-serif;
 }
 
 .blah > input::placeholder {
@@ -502,7 +660,7 @@ body {
 }
 
 .blah > input {
-    background-color: rgba(153, 194, 216, 1);
+    background-color: #ccc;
     border: 1px solid white;
 }
 
@@ -511,9 +669,26 @@ body {
 }
 
 .blah > textarea {
-    background-color: rgba(153, 194, 216, 1);
+    background-color: #ccc;
     border: 1px solid white;
 }
+
+.waiver > p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    color: #777;
+}
+
+textarea {
+    resize: none;
+}
+
+.container-width {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
@@ -657,9 +832,18 @@ hr {
     text-align: center;
 }
 
-/*margin right and left*/
+/*end fixes*/
 
-.marg-rl {
-    margin-right: -15px;
-    margin-left: -15px;
+.pg1 > div {
+    padding: 0;
+    overflow: hidden;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
