@@ -165,6 +165,12 @@ body {
         left: 33%;
     }
     .listings {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .listings {
         max-width: 500px;
     }
 }
@@ -534,13 +540,20 @@ body {
 }
 
 .top-section > div > h1 {
-    font-family: 'Overpass', sans-serif;
-    font-size: 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
 }
 
 .top-descript {
     margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.top-header {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 /*about main pics*/
@@ -603,7 +616,7 @@ body {
 }
 
 .first-row {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .communities-option > div > a > img {
@@ -657,6 +670,8 @@ body {
 
 .blah > input::placeholder {
     color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
 }
 
 .blah > input {
