@@ -2,6 +2,7 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+
 /*hero-section*/
 
 #hero-container {
@@ -36,6 +37,11 @@ body {
 
 
 /*2nd section*/
+
+/* .pg1 {
+    margin-right: 0;
+    margin-left: 0;
+} */
 
 .pg1 > div {
     padding: 0;
@@ -246,13 +252,34 @@ body {
 
 /*footer section*/
 
+.footer-quote {
+    background-color: #666;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin-top: 35px;
+}
+
+.quote-text > div > p {
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Overpass', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .quote-text > div > p {
+        color: #666;
+    }
+}
+
 .footer-setting {
     background-color: black;
     width: 100%;
 }
 
 .footer {
-    margin-top: 35px;
     border-top: 2px solid black;
 }
 
@@ -628,4 +655,11 @@ hr {
 .left-info > li {
     text-decoration: underline;
     text-align: center;
+}
+
+/*margin right and left*/
+
+.marg-rl {
+    margin-right: -15px;
+    margin-left: -15px;
 }
