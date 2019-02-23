@@ -118,7 +118,8 @@ body {
     color: #777;
     font-family: 'Overpass', sans-serif;
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 
@@ -228,7 +229,7 @@ body {
     color: #777;
     font-family: 'Overpass', sans-serif;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .pg3 > #contact-bottom {
@@ -542,11 +543,21 @@ body {
 .top-section > div > h1 {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .top-descript {
     margin-bottom: 10px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    color: #777;
+}
+
+.top-descript > div > p {
+    text-transform: uppercase;
+    font-family: 'overpass', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    font-size: 20px;
 }
 
 .top-header {
@@ -554,6 +565,7 @@ body {
     font-size: 60px;
     font-weight: 600;
     font-family: 'Pathway Gothic One', sans-serif;
+    letter-spacing: 3px;
 }
 
 /*about main pics*/
@@ -572,26 +584,30 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 768px) {
-    .top-descript > div > h2 {
-        font-size: 25px;
-    }
-}
-
 /*about info*/
 
 .title {
     text-align: center;
+    margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-    .title > div > h2 {
-        font-size: 25px;
-    }
+.title > div > p {
+    color: #777;
+    text-transform: uppercase;
+    font-family: 'overpass', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    font-size: 25px;
 }
+
 
 .about-info > div > p {
     text-indent: 10px;
+    color: #777;
+    font-family: 'overpass', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .about-info > div > img {
@@ -599,24 +615,21 @@ body {
     margin-bottom: 10px;
 }
 
-.left-brd {
-    border-left: 1px solid black;
-}
-
-@media (max-width: 768px) {
-    .left-brd {
-        border-left: none;
-    }
-}
 
 /*communities listings*/
 
 .list-pic {
-    padding: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
 }
 
 .first-row {
     margin-top: 20px;
+}
+
+.communities-option > div {
+    overflow: hidden;
 }
 
 .communities-option > div > a > img {
@@ -631,16 +644,81 @@ body {
 
 .comm-text {
     position: absolute;
-    bottom: 0;
-    background: #000;
-    width: 100%;
-    opacity: .7;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 20px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+    bottom: 0;
+    width: calc(100% - 10px);
+    padding: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
+.list-text {
+    text-align: left;
+    height: 100%
+}
+
+.list-text > .add-name {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 55%;
+}
+
+@media (max-width: 992px) {
+    .comm-text {
+        font-size: 12px;
+    }
+    .list-text > .add-name {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-text > .add-name {
+        margin-top: 67%;
+    }
+}
+
+@media (max-width: 650px) {
+    .list-text > .add-name {
+        margin-top: 56%;
+    }
+}
+
+@media (max-width: 559px) {
+    .list-text > .add-name {
+        margin-top: 44%;
+    }
+}
+
+@media (max-width: 510px) {
+    .list-text > .add-name {
+        margin-top: 36%;
+    }  
+}
+
+@media (max-width: 475px) {
+        .list-text > .add-name {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 410px) {
+    .list-text > .add-name {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 365px) {
+    .list-text > .add-name {
+        margin-top: -10%;
+    }
+}
 
 /*contact form*/
 
@@ -681,6 +759,7 @@ body {
 
 .blah > textarea::placeholder {
     color: white;
+    font-weight: 100;
 }
 
 .blah > textarea {
@@ -704,28 +783,29 @@ textarea {
     margin-right: auto;
 }
 
-
-
-
-
 /*preferred vendors list*/
 
 .pref-header {
     margin-top: 15px;
 }
 
+.pref-list > div > h1 {
+    font-family: 'overpass', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #777;
+}
+
 .pref-list > div > p {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'overpass', sans-serif;
+    color: #777;
+    font-weight: 100;
 }
 
 @media (max-width: 768px) {
     .pref-small {
         margin-top: 10px;
-    }
-
-    .pref-list {
-        text-align: center;
     }
     .pref-header {
         margin-top: 25px;
@@ -747,11 +827,27 @@ textarea {
     text-align: center;
     background-color: rgba(145, 167, 195, 1);
     border: 1px solid black;
-    font-family: 'Lato', sans-serif;
+    font-family: 'overpass', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.side-space > input::placeholder {
+    font-weight: 100;
+}
+
+.side-space > textarea::placeholder {
+    font-weight: 100;
+}
+
+.side-space > h2 {
+    font-weight: 400;
 }
 
 .side-btn {
     white-space: normal;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .side-space {
@@ -761,9 +857,23 @@ textarea {
 
 .page-info > div > p {
     text-indent: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'overpass', sans-serif;
     font-size: 15px;
+    color: #777;
 }
+
+.page-info > div > p > b {
+    color: black;
+}
+
+.marg-bot {
+    margin-bottom: 20px;
+}
+
+.no-pd-left2 {
+    padding-left: 0;
+}
+
 
 
 /*investors*/
@@ -779,6 +889,11 @@ hr {
     font-size: 20px;
 }
 
+.no-pd2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /*property management*/
 
 .propMgmt {
@@ -790,7 +905,9 @@ hr {
 
 .page-info > div > ul > li {
     font-family: 'Lato', sans-serif;
+    color: #777;
 }
+
 
 /*featured invest listings*/
 
@@ -848,6 +965,12 @@ hr {
 }
 
 /*end fixes*/
+
+@media (max-width: 992px) {
+    .no-pd-left2 {
+        padding-right: 0;
+    }
+}
 
 .pg1 > div {
     padding: 0;

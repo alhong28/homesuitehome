@@ -56,7 +56,18 @@ $(document).ready(function () {
         $(this).find(".pg3-img").css("transition", ".1s");
     })
     
-
+    $(".list-pic").hover(function(e){
+        $(this).find(".list-act").css("-moz-transform", "scale(1.1)");
+        $(this).find(".list-act").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".list-act").css("transform", "scale(1.1)")
+        $(this).find(".list-act").css("transition", ".5s");
+    },
+    function(e){
+        $(this).find(".list-act").css("-moz-transform", "scale(1)");
+        $(this).find(".list-act").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".list-act").css("transform", "scale(1)")
+        $(this).find(".list-act").css("transition", ".5s");
+    })
   });
 
 
