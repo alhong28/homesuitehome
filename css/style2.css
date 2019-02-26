@@ -931,7 +931,7 @@ hr {
     box-sizing: border-box;
 }
 
-.list-act {
+.list-top {
     text-decoration: none;
     font-family: 'overpass', sans-serif;
     color: #777;
@@ -952,7 +952,7 @@ hr {
     border-right: none;
 }
 
-.list-act:hover {
+.list-top:hover {
     color: #777;
     background-color: #f4f4f4;
 }
