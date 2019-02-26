@@ -885,7 +885,7 @@ hr {
 }
 
 .page-info > div > b {
-    font-family: 'Lato', sans-serif;
+    font-family: 'overpass', sans-serif;
     font-size: 20px;
 }
 
@@ -904,7 +904,7 @@ hr {
 }
 
 .page-info > div > ul > li {
-    font-family: 'Lato', sans-serif;
+    font-family: 'overpass', sans-serif;
     color: #777;
 }
 
@@ -916,14 +916,45 @@ hr {
     display: inline;
 }
 
-.prop-address {
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 20px;
+.prop-detail {
+    font-family: 'overpass', sans-serif;
+    font-weight: 100;
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.listing-info > div > p {
-    font-size: 25px;
+.navbar-list {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.list-act {
+    text-decoration: none;
+    font-family: 'overpass', sans-serif;
+    color: #777;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 12px 14px 10px 14px;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.navbar-list > a:hover {
+    text-decoration: none;
+}
+
+.print  {
+    float: right;
+    border-left: 1px solid #ccc;
+    border-right: none;
+}
+
+.list-act:hover {
+    color: #777;
+    background-color: #f4f4f4;
 }
 
 .listing-pic-sing > div > img {
@@ -941,28 +972,78 @@ hr {
     width: 100%;
 }
 
-.ess-info > div > ul > li {
-    list-style-type: none;
+.pica {
+    padding-right: 5px;
 }
 
-.left-info {
-    padding: 0;
+.picb {
+    padding-left: 5px;
+}
+
+.picc {
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.picd {
+    padding-left: 5px;
+    padding-top: 10px;
 }
 
 .info-container {
-    border: 2px solid black;
-    background-color:  rgba(153, 194, 216, 1);
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: calc(50% - 5px);
+    margin-top: 5px;
+}
+
+.info-left {
+    margin-right: 5px;
+}
+
+.info-right {
+    margin-left: 5px;
 }
 
 .info-container > div > div > h3 {
-    text-align: center;
-    text-decoration: underline;
+    text-align: left;
+    font-family: 'overpass', sans-serif;
+    color: #222;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
-.left-info > li {
-    text-decoration: underline;
-    text-align: center;
+.kvs .kv {
+    border-bottom: 1px solid #e6e6e6;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 8px;
+    font-family: 'overpass', sans-serif;
+    color: #777;
 }
+
+.kv {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+}
+
+.kvs :last-child {
+    border-bottom: none;
+}
+
+.k {
+    font-weight: 400;
+}
+
+.v {
+    text-align: right;
+    margin-left: auto;
+    font-weight: 100;
+}
+
+
 
 /*end fixes*/
 
