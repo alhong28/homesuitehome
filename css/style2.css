@@ -235,7 +235,7 @@ body {
 .pg3 > #contact-bottom {
     border: 1px solid #ccc;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .pg3 > #contact-bottom > a {
@@ -259,6 +259,10 @@ body {
 
 .pg3 > #contact-bottom > a:hover {
     color: white;
+}
+
+.social-div {
+    padding-right: 0;
 }
 
 .social-icons {
