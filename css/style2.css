@@ -546,8 +546,9 @@ body {
 
 .top-section > div > h1 {
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .top-descript {
@@ -565,11 +566,11 @@ body {
 }
 
 .top-header {
-    margin-top: 20px;
-    font-size: 60px;
-    font-weight: 600;
+    margin-top: 10px;
+    font-size: 100px;
+    font-weight: 400;
     font-family: 'Pathway Gothic One', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /*about main pics*/
@@ -644,7 +645,6 @@ body {
     opacity: 0.7;
     transition: .7s;
 }
-
 
 .comm-text {
     position: absolute;
@@ -924,8 +924,9 @@ hr {
     font-family: 'overpass', sans-serif;
     font-weight: 100;
     color: #777;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .navbar-list {
