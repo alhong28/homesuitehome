@@ -248,16 +248,8 @@ body {
     margin-top: 10px;
 }
 
-.pg3 > #contact-bottom:hover {
+.pg3 > #contact-bottom:hover, .pg3 > #contact-bottom:hover > a {
     background-color: #777;
-    color: white;
-}
-
-.pg3 > #contact-bottom > a > h2:hover {
-    color: white;
-}
-
-.pg3 > #contact-bottom > a:hover {
     color: white;
 }
 
@@ -307,10 +299,13 @@ body {
     border: 1px solid #ccc;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
     .pg3 > #contact-bottom {
         width: 50%;
         margin: 0 auto;
+    }
+    .social-icons {
+        padding-right: 33px;
     }
 }
 
@@ -571,6 +566,7 @@ body {
     font-weight: 400;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /*about main pics*/
@@ -1072,7 +1068,37 @@ hr {
     font-weight: 100;
 }
 
+@media (max-width: 390px) {
+    a.list-top {
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    a.print {
+        border-top: 1px solid #ccc;
+    }
+}
 
+@media (max-width: 530px) {
+    .info-container {
+        width: 100%;
+    }
+    .info-right, .info-left {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mult-pic {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .mult-pic > img {
+        padding: 0;
+        margin: 0;
+    }
+    .mult-pic-last {
+        margin-bottom: 0;
+    }
+}
 
 /*end fixes*/
 
