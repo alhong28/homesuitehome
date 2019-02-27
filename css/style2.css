@@ -787,6 +787,30 @@ textarea {
     margin-right: auto;
 }
 
+@media (max-width: 992px) {
+    .container-width {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-width {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 526px) {
+    .container-width {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 373px) {
+    .container-width {
+        max-width: 280px;
+    }
+}
+
 /*preferred vendors list*/
 
 .pref-header {
