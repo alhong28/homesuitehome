@@ -578,6 +578,16 @@ body {
     text-transform: uppercase;
 }
 
+.top-section > div > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-section > div > h1 > a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .top-descript {
     margin-bottom: 10px;
     color: #777;
@@ -999,6 +1009,7 @@ hr {
 /*featured invest listings*/
 
 .top-section > div > h1 > p {
+    margin-left: 5px;
     font-size:  15px;
     display: inline;
 }
