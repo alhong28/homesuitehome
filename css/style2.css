@@ -765,6 +765,10 @@ body {
     border-color: #666;
 }
 
+.form-btn:hover {
+    background-color: black;
+}
+
 .btn-wrapper {
     text-align: center;
     font-family: 'Overpass', sans-serif;
