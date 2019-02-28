@@ -6,6 +6,19 @@ $(document).ready(function () {
       trigger.click(function () {
         hamburger_cross();      
       });
+      overlay.click(function () {
+        overlayToggle();
+      });
+
+      function overlayToggle () {
+        if (isClosed == true) {
+          overlay.hide();
+          trigger.removeClass('is-open');
+          trigger.addClass('is-closed');
+          isClosed = false;
+          $('#wrapper').toggleClass('toggled');
+        }
+      }
   
       function hamburger_cross() {
   

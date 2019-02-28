@@ -61,12 +61,20 @@ $(document).ready(function () {
         $(this).find(".list-act").css("-webkit-transform", "scale(1.1)");
         $(this).find(".list-act").css("transform", "scale(1.1)")
         $(this).find(".list-act").css("transition", ".5s");
+        $(this).find(".comm-text").css("-moz-transform", "scale(1.1)");
+        $(this).find(".comm-text").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".comm-text").css("transform", "scale(1.1)")
+        $(this).find(".comm-text").css("transition", ".5s");
     },
     function(e){
         $(this).find(".list-act").css("-moz-transform", "scale(1)");
         $(this).find(".list-act").css("-webkit-transform", "scale(1.1)");
         $(this).find(".list-act").css("transform", "scale(1)")
         $(this).find(".list-act").css("transition", ".5s");
+        $(this).find(".comm-text").css("-moz-transform", "scale(1)");
+        $(this).find(".comm-text").css("-webkit-transform", "scale(1.1)");
+        $(this).find(".comm-text").css("transform", "scale(1)")
+        $(this).find(".comm-text").css("transition", ".5s");
     })
   });
 

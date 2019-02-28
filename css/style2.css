@@ -579,7 +579,7 @@ body {
 
 @media (max-width: 400px) {
     .top-header {
-        font-size: 80px;
+        font-size: 69px;
     }
 }
 
@@ -616,9 +616,19 @@ body {
     font-size: 25px;
 }
 
+.first-bold:first-letter {
+    float: left;
+    font-size: 96px;
+    line-height: 60px;
+    padding: 12px 8px 4px 0;
+    margin-left: -4px;
+    color: #444;
+    font-weight: 400;
+    vertical-align: baseline;
+}
 
 .about-info > div > p {
-    text-indent: 10px;
+    /* text-indent: 10px; */
     color: #777;
     font-family: 'overpass', sans-serif;
     font-weight: 400;
@@ -854,17 +864,21 @@ textarea {
 /*sellers*/
 
 .seller-icon {
-    color:  rgba(74, 144, 226, 1);
+    color: #777;
 }
 
 .seller-icon > .fa:hover {
     opacity: 1;
 }
 
+.seller-icon > i {
+    font-size: 40px;
+}
+
 .side-form {
     text-align: center;
-    background-color: rgba(145, 167, 195, 1);
-    border: 1px solid black;
+    background-color: #ccc;
+    /* border: 1px solid #777; */
     font-family: 'overpass', sans-serif;
     text-transform: uppercase;
     font-size: 15px;
@@ -880,12 +894,19 @@ textarea {
 
 .side-space > h2 {
     font-weight: 400;
+    font-size: 20px;
 }
 
 .side-btn {
     white-space: normal;
     text-transform: uppercase;
     font-weight: 400;
+    background-color: #777;
+    border: black;
+}
+
+.side-btn:hover {
+    background-color: black;
 }
 
 .side-space {
@@ -894,7 +915,7 @@ textarea {
 }
 
 .page-info > div > p {
-    text-indent: 10px;
+    /* text-indent: 10px; */
     font-family: 'overpass', sans-serif;
     font-size: 15px;
     color: #777;
@@ -917,7 +938,7 @@ textarea {
 /*investors*/
 
 hr {
-    border: .5px solid black;
+    border: .5px solid #ccc;
     width: 100%;
     display: inline-block;
 }
@@ -1080,6 +1101,11 @@ hr {
     text-align: right;
     margin-left: auto;
     font-weight: 100;
+}
+
+.map {
+    margin-top: 10px;
+    width: 100%;
 }
 
 @media (max-width: 390px) {
