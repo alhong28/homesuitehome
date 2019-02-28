@@ -1105,6 +1105,10 @@ hr {
 
 .map {
     margin-top: 10px;
+    padding: 0;
+}
+
+iframe {
     width: 100%;
 }
 
