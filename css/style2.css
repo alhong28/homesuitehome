@@ -889,6 +889,16 @@ textarea {
     font-weight: 100;
 }
 
+.pref-list > div > p:first-child {
+    color: #444;
+    font-weight: 600;
+}
+
+.pref-list > div > p:nth-child(2) {
+    color: #666;
+    font-weight: 400;
+}
+
 @media (max-width: 768px) {
     .pref-small {
         margin-top: 10px;
